@@ -39,3 +39,7 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+---
+
+由于需要自定义一些布局，所以使用了 [swizzling](https://docusaurus.io/zh-CN/docs/swizzling#what-is-safe-to-swizzle)， 使用了其 **ejecting** 的方式，即把主题原生的组件替换成自己定义的组件。

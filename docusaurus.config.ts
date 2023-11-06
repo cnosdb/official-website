@@ -9,7 +9,7 @@ const url =
 const config: Config = {
   title: 'CnosDB',
   tagline: 'CnosDB are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url,
@@ -116,7 +116,46 @@ const config: Config = {
       ],
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      logo: {
+        alt: 'Meta Open Source Logo',
+        src: 'img/meta_oss_logo.png',
+        href: 'https://opensource.fb.com',
+        width: 160,
+        height: 51,
+      },
+      links: [
+        {
+          title: 'Product',
+          items: [
+            {
+              label: 'CnosDB 2.0',
+              to: 'cnosdb-2-0',
+            },
+            {
+              label: 'Documentation',
+              to: 'https://docs.cnosdb.com',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            {
+              label: 'Engineer Insights',
+              to: '/blog/category/Engineer-Insights/',
+            },
+            {
+              label: 'Github',
+              href: 'https://github.com/cnosdb/cnosdb',
+            },
+          ],
+        },
+        {
+          title: 'Subscribe to Newsletter',
+          items: [],
+        },
+      ],
+      copyright: `CnosDB © ${new Date().getFullYear()}`,
     },
     algolia: {
       appId: '4O093YZHL1',
