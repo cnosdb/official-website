@@ -1,22 +1,26 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const url =
+  process.env.NODE_ENV !== 'development'
+    ? 'https://docs.cnosdb.com'
+    : 'http://localhost:3000';
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CnosDB',
+  tagline: 'CnosDB are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'CnosDB', // Usually your GitHub org/user name.
+  projectName: 'docs.cnosdb.com', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,7 +30,13 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-Hans'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-US',
+      },
+      // 如果你不需要覆盖默认值，你可以忽略这个语言（比如 zh-Hans）
+    },
   },
 
   presets: [
@@ -58,20 +68,48 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'CnosDB',
+        src: 'img/logo.png',
+        srcDark: 'img/logo_dark.png',
       },
       items: [
+        // right
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          label: 'Cloud',
+          href: 'https://www.cnosdb.com/cnosdb-cloud-waitlist/',
+          position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          label: 'CnosDB 2.0',
+          to: 'blog',
+          position: 'right',
+        },
+        {
+          label: 'Documentation',
+          href: 'https://docs.cnosdb.com',
+          position: 'right',
+        },
+        {
+          label: 'Blog',
+          to: 'blog',
+          position: 'right',
+        },
+        {
+          label: 'Community',
+          to: 'blog',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
+          type: 'search',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/cnosdb/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -79,6 +117,11 @@ const config: Config = {
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+    },
+    algolia: {
+      appId: '4O093YZHL1',
+      apiKey: 'b02a6bb324334323de977f71e73d06d0',
+      indexName: 'cnosdb',
     },
     prism: {
       theme: prismThemes.github,
