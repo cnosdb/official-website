@@ -39,6 +39,14 @@ const config: Config = {
     },
   },
 
+  scripts: [
+    // Community event 需要引入如下js文件
+    {
+      src: 'https://static.elfsight.com/platform/platform.js',
+      defer: true,
+    },
+  ],
+
   presets: [
     [
       'classic',
