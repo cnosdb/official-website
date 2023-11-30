@@ -2,14 +2,6 @@ import clsx from 'clsx';
 import React, { useState } from 'react';
 
 export default function MainPage() {
-  interface Resource {
-    url: string;
-    type: string;
-    title: string;
-    description: string;
-    image: string;
-    duration: string;
-  }
 
   const langCodes = {
     rust: `

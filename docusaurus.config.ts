@@ -86,7 +86,7 @@ const config: Config = {
         },
         {
           label: 'CnosDB 2.0',
-          to: 'blog',
+          to: '/cnosdb-2-0',
           position: 'right',
         },
         {
@@ -101,7 +101,7 @@ const config: Config = {
         },
         {
           label: 'Community',
-          to: 'blog',
+          to: '/community',
           position: 'right',
         },
         {
