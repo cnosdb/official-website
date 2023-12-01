@@ -4,6 +4,7 @@
  * work well for content-centric websites.
  */
 
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 /* You can override the default Infima variables here. */
 :root {
@@ -71,6 +72,12 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.navbar {
+  width: 1240px;
+  margin: 0 auto;
+  box-shadow: none;
 }
 
 .cnos-container {

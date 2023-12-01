@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const url =
   process.env.NODE_ENV !== 'development'
-    ? 'https://docs.cnosdb.com'
+    ? 'https://cnosdb.com'
     : 'http://localhost:3000';
 const config: Config = {
   title: 'CnosDB',
@@ -20,7 +20,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'CnosDB', // Usually your GitHub org/user name.
-  projectName: 'docs.cnosdb.com', // Usually your repo name.
+  projectName: 'cnosdb.com', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -152,10 +152,6 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
-            {
-              label: 'Engineer Insights',
-              to: '/blog/category/Engineer-Insights/',
-            },
             {
               label: 'Github',
               href: 'https://github.com/cnosdb/cnosdb',
