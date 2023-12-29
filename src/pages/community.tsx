@@ -6,8 +6,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Community`}
+      description="Welcome to the CnosDB community! In the CnosDB open source community, you can connect with other users and contributors. Explore ways to get involved, stay up-to-date on the latest CnosDB product, open source, and IoT-related news, and stay in sync with the global community. Share your experiences using CnosDB, including the challenges you've faced, the lessons you've learned, and the issues you've encountered. The community is a forum for open discussion and learning.">
       <main className={styles.container}>
         <div className={styles.header}>
           <div className={styles.innerContainer}>
