@@ -125,6 +125,12 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          label: 'Download',
+          to: '/download',
+          position: 'right',
+          className: 'header-download'
+        },
       ],
     },
     footer: {

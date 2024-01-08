@@ -74,6 +74,17 @@ html {
   box-sizing: inherit;
 }
 
+.header-download {
+  padding: 10px 18px !important;
+  color: #fff;
+  background: #f25319;
+  border-radius: 8px;
+}
+.header-download:hover {
+  color: #fff;
+  background: #b13305;
+}
+
 .navbar {
   width: 1240px;
   margin: 0 auto;
