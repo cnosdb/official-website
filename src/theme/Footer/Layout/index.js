@@ -1,5 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
+import ContactUs from '../ContactUs';
+
 export default function FooterLayout({ style, links, logo, copyright }) {
   return (
     <footer
@@ -8,14 +10,12 @@ export default function FooterLayout({ style, links, logo, copyright }) {
       })}
     >
       <div className="container container-fluid">
-        {links}
-        {(logo || copyright) && (
-          <div className="footer__bottom text--center">
-            {logo && <div className="margin-bottom--sm">{logo}</div>}
-            {copyright}
-          </div>
-        )}
+        <div className="footer-inner-box">
+          <ContactUs />
+          {links}
+        </div>
       </div>
+      <div className="footer-copyright">{copyright}</div>
     </footer>
   );
 }

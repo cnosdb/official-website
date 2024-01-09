@@ -1,0 +1,246 @@
+/* reset footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  padding: 0;
+  padding-top: 90px;
+  color: #fff;
+  background-color: #050c45;
+  background-image: none;
+}
+.footer .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.footer .container .footer-inner-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__title {
+  font-size: 20px;
+}
+.footer__link-item {
+  font-size: 15px;
+  color: #fff;
+}
+.footer-social-inner-wrap {
+  width: 263px;
+  margin-right: 8vw;
+}
+.footer-social-inner-wrap a {
+  display: inline-block;
+  padding: 12px;
+}
+.footer-social-inner-wrap svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+.footer-copyright {
+  height: 80px;
+  line-height: 80px;
+  font-size: 15px;
+  text-align: center;
+  color: #7f88a3;
+  border-top: 1px solid rgba(255, 255, 255, 0.19);
+}
+.footer-logo {
+  margin-top: 60px;
+}
+
+.footer__links {
+  flex: 1;
+}
+
+/** Start Block Kit CSS: 142-3-a175df65179b9ef6a5ca9f1b2c0202b9 **/
+
+.envato-block__preview {
+  overflow: visible;
+}
+
+/* Border Radius */
+.envato-kit-139-accordion .elementor-widget-container {
+  border-radius: 10px !important;
+}
+.envato-kit-139-map iframe,
+.envato-kit-139-slider .slick-slide,
+.envato-kit-139-flipbox .elementor-flip-box div {
+  border-radius: 10px !important;
+}
+
+/** End Block Kit CSS: 142-3-a175df65179b9ef6a5ca9f1b2c0202b9 **/
+
+/** Start Block Kit CSS: 105-3-0fb64e69c49a8e10692d28840c54ef95 **/
+
+.envato-kit-102-phone-overlay {
+  position: absolute !important;
+  display: block !important;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  z-index: 1;
+}
+
+/** End Block Kit CSS: 105-3-0fb64e69c49a8e10692d28840c54ef95 **/
+
+/** Start Block Kit CSS: 143-3-7969bb877702491bc5ca272e536ada9d **/
+
+.envato-block__preview {
+  overflow: visible;
+}
+/* Material Button Click Effect */
+.envato-kit-140-material-hit .menu-item a,
+.envato-kit-140-material-button .elementor-button {
+  background-position: center;
+  transition: background 0.8s;
+}
+.envato-kit-140-material-hit .menu-item a:hover,
+.envato-kit-140-material-button .elementor-button:hover {
+  background: radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
+}
+.envato-kit-140-material-hit .menu-item a:active,
+.envato-kit-140-material-button .elementor-button:active {
+  background-color: #fff;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Field Shadow */
+.envato-kit-140-big-shadow-form .elementor-field-textual {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* FAQ */
+.envato-kit-140-faq .elementor-accordion .elementor-accordion-item {
+  border-width: 0 0 1px !important;
+}
+
+/* Scrollable Columns */
+.envato-kit-140-scrollable {
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* ImageBox: No Space */
+.envato-kit-140-imagebox-nospace:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.envato-kit-140-imagebox-nospace figure {
+  line-height: 0;
+}
+
+.envato-kit-140-slide .elementor-slide-content {
+  background: #fff;
+  margin-left: -60px;
+  padding: 1em;
+}
+.envato-kit-140-carousel .slick-active:not(.slick-current) img {
+  padding: 20px !important;
+  transition: all 0.9s;
+}
+
+/** End Block Kit CSS: 143-3-7969bb877702491bc5ca272e536ada9d **/
+
+.menu .menu-item a {
+  color: #fff;
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+
+
+.footer-social-inner-wrap a:nth-of-type(3),
+.footer-social-inner-wrap a:nth-of-type(4) {
+  position: relative;
+}
+.footer-social-inner-wrap a:nth-of-type(3)::before {
+  position: absolute;
+  left: -90px;
+  z-index: 99;
+  content: '';
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-360px);
+  transition: all 0.5s;
+  width: 258px;
+  height: 300px;
+  background: url('https://cnosdb.com/wp-content/uploads/2022/06/CnosDB公众号二维码.png')
+    no-repeat center center;
+  background-size: cover;
+}
+.footer-social-inner-wrap a:nth-of-type(3):hover::before {
+  visibility: visible;
+  transform: translateY(-300px);
+  opacity: 1;
+  cursor: pointer !important;
+}
+
+.footer-social-inner-wrap a:nth-of-type(4)::before {
+  position: absolute;
+  left: -90px;
+  z-index: 99;
+  content: '';
+  visibility: hidden;
+  width: 258px;
+  height: 300px;
+  transform: translateY(-360px);
+  transition: all 0.5s;
+  background: url('https://cnosdb.com/wp-content/uploads/2022/06/CnosDB-视频号二维码.jpeg')
+    no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+}
+.footer-social-inner-wrap a:nth-of-type(4):hover::before {
+  visibility: visible;
+  transform: translateY(-300px);
+  opacity: 1;
+  cursor: pointer !important;
+}
+
+@media (max-width: 921px) {
+  .footer-social-inner-wrap a:nth-of-type(4)::before {
+    left: -150px;
+  }
+}
+
+@media (max-width: 544px) {
+  .ast-footer-row-mobile-stack .site-footer-section {
+    margin-bottom: 27px !important;
+  }
+
+  .footer-social-inner-wrap a:nth-of-type(3)::before {
+    left: 25px;
+  }
+
+  .footer-social-inner-wrap a:nth-of-type(4)::before {
+    left: -20px;
+  }
+
+  .footer-widget-area[data-section='sidebar-widgets-footer-widget-2'] {
+    margin: 0;
+  }
+  .has-text-align-left {
+    text-align: center;
+  }
+}

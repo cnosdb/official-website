@@ -30,10 +30,13 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans'],
+    locales: ['en', 'zh'],
     localeConfigs: {
       en: {
         htmlLang: 'en-US',
+      },
+      zh: {
+        htmlLang: 'zh-Hans',
       },
       // 如果你不需要覆盖默认值，你可以忽略这个语言（比如 zh-Hans）
     },
@@ -66,7 +69,7 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: ['./src/css/custom.css'],
+          customCss: ['./src/css/custom.css', './src/css/footer.css'],
         },
       } satisfies Preset.Options,
     ],
@@ -129,18 +132,11 @@ const config: Config = {
           label: 'Download',
           to: '/download',
           position: 'right',
-          className: 'header-download'
+          className: 'header-download',
         },
       ],
     },
     footer: {
-      logo: {
-        alt: 'Meta Open Source Logo',
-        src: 'img/meta_oss_logo.png',
-        href: 'https://opensource.fb.com',
-        width: 160,
-        height: 51,
-      },
       links: [
         {
           title: 'Product',
@@ -158,6 +154,10 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
+            {
+              label: 'Engineer Insights',
+              to: '/blog',
+            },
             {
               label: 'Github',
               href: 'https://github.com/cnosdb/cnosdb',
