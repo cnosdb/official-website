@@ -1,0 +1,34 @@
+{
+  "logo.alt": {
+    "message": "CnosDB",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Cloud": {
+    "message": "Cloud",
+    "description": "Navbar item with label Cloud"
+  },
+  "item.label.CnosDB 2.0": {
+    "message": "CnosDB 2.0",
+    "description": "Navbar item with label CnosDB 2.0"
+  },
+  "item.label.Documentation": {
+    "message": "文档",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Community": {
+    "message": "社区",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Download": {
+    "message": "下载试用",
+    "description": "Navbar item with label Download"
+  }
+}

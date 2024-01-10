@@ -1,0 +1,38 @@
+{
+  "link.title.Product": {
+    "message": "产品",
+    "description": "The title of the footer links column with title=Product in the footer"
+  },
+  "link.title.Resources": {
+    "message": "学习资源",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.Subscribe to Newsletter": {
+    "message": "欢迎订阅CnosDB期刊",
+    "description": "The title of the footer links column with title=Subscribe to Newsletter in the footer"
+  },
+  "link.item.label.CnosDB 2.0": {
+    "message": "CnosDB 2.0",
+    "description": "The label of footer link with label=CnosDB 2.0 linking to cnosdb-2-0"
+  },
+  "link.item.label.Documentation": {
+    "message": "文档",
+    "description": "The label of footer link with label=Documentation linking to https://docs.cnosdb.com"
+  },
+  "link.item.label.Engineer Insights": {
+    "message": "工程师有话说",
+    "description": "The label of footer link with label=Engineer Insights linking to /blog"
+  },
+  "link.item.label.Community": {
+    "message": "社区",
+    "description": "The label of footer link with label=Github linking to https://github.com/cnosdb/cnosdb"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "The label of footer link with label=Github linking to https://github.com/cnosdb/cnosdb"
+  },
+  "copyright": {
+    "message": "CnosDB © 2024",
+    "description": "The footer copyright"
+  }
+}

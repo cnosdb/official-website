@@ -15,20 +15,20 @@ export default function Home(): JSX.Element {
   const handleShow = () => setShow(true);
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`CnosDB 2.0 - CnosDB`}
+      description="CnosDB | A high-performance, highly-compressed, highly available distributed cloud-native time-series database - At the time-series database level, it supports: strong scalability; compute/storage separation; balanced storage performance and cost; vectorized query support; support for multiple time-series protocols; and external full ecosystem support. At the cloud-native level, it supports: high availability; multi-tenancy with pay-as-you-go pricing; Change Data Capture (CDC); configurable requirements; cloud-edge coordination; and cloud-native ecosystem integration.">
       <main className={styles.container}>
         <div className={styles.header}>
           <div className={styles.innerContainer}>
-            <h1 className={styles.headerTitle}>Cloud Native Time-Series Database <br />CnosDB 2.0 <span className={styles.spacerInner}></span></h1>
+            <h1 className={styles.headerTitle}> 中文<br />CnosDB 2.0 <span className={styles.spacerInner}></span></h1>
           </div>
         </div>
         <div className={clsx(styles.innerContainer, styles.cardBox, styles.flexbox)}>
           <div className={styles.widgetWrap}>
             <img className={styles.cardImg} src="https://cnosdb.com/wp-content/uploads/2023/02/community-4.svg" title="community-4.svg" alt="community-4.svg" />
             <div className={styles.widgetContainer}>
-              <h2 className={styles.cardHeadingTitle}>Community Edition</h2>
-              <h3 className={styles.cardHeadingSubTitle}>Free, open source, eco-friendly</h3>
+              <h2 className={styles.cardHeadingTitle}>中文</h2>
+              <h3 className={styles.cardHeadingSubTitle}>中文</h3>
             </div>
 
             <ul className={styles.iconList}>
@@ -190,12 +190,14 @@ export default function Home(): JSX.Element {
           </Modal.Header>
           <Modal.Body>
             <iframe
-              id="goldendata_form_qrj9lq"
-              src="https://jinshuju.net/f/qrj9lq?background=white&banner=show&embedded=true&inner_redirect=true"
-              width="100%"
-              allowTransparency={true}
-              style={{ height: '650px' }}
-            ></iframe>
+              id="JotFormIFrame-230889233620154"
+              title="Contact Us"
+              onLoad={() => { window.parent.scrollTo(0, 0) }}
+              allow="geolocation; microphone; camera"
+              src="https://form.jotform.com/230889233620154"
+              style={{ minWidth: '100%', maxWidth: '100%', height: '539px', border: 'none' }}
+            >
+            </iframe>
           </Modal.Body>
         </Modal>
 

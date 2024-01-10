@@ -1,0 +1,223 @@
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-main-zh {
+  width: 100%;
+  height: 100%;
+}
+.main-flex {
+  display: flex;
+}
+.main-background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #07134b;
+  background-image: url('https://www.cnosdb.com/wp-content/uploads/2022/04/jared-arango-1-mh6U3qeGQ-unsplash.jpg');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.11;
+}
+.inner-container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+.main-zh-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 472px;
+  background-color: #07134b;
+}
+.header-title {
+  position: relative;
+  z-index: 2;
+  width: 42.806%;
+  padding: 110px 0 0 18px;
+  color: #ffffff;
+  font-family: 'Arial', Sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 58px;
+}
+.slider-container {
+  width: 57.194%;
+  padding: 1em;
+}
+.header-title .spacer-inner {
+  position: absolute;
+  left: 7px;
+  top: 91px;
+  z-index: -1;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  background-color: #f2531b;
+}
+.slick-dots {
+  height: 30px;
+  bottom: -9px;
+}
+.href-box:hover {
+  text-decoration: none;
+}
+.slick-dots li button {
+  color: red;
+}
+.slick-dots li button:before {
+  color: #fff;
+  opacity: 0.2;
+  font-size: 8px;
+}
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
+}
+
+.slider-carousel-caption {
+  text-align: center;
+  color: #ffffffb5;
+  font-size: 16px;
+}
+
+.widget-wrap {
+  padding: 6em 1em 7em 1em;
+}
+.widget-wrap-right {
+  padding: 2em 5em 2em 2em;
+}
+
+.attachment-large {
+  display: inline-block;
+  width: 471px;
+  height: 296px;
+  object-fit: cover;
+}
+.widget-container {
+  margin: 0 10% 0% 10%;
+  padding: 2em;
+  text-align: left;
+  background-color: #f2531b;
+  border-radius: 6px;
+}
+.testimonial-content {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Open Sans', Sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: none;
+  font-style: italic;
+  text-decoration: none;
+  line-height: 1.6em;
+}
+.testimonial-image {
+  display: flex;
+  align-items: center;
+}
+.attachment-thumbnail {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  border-style: groove;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(154, 153, 175, 0.92);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-name {
+  color: #ffffff;
+  font-family: 'Ubuntu', Sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.1em;
+}
+.heading-title {
+  color: #191b4a;
+  font-family: 'Arial', Sans-serif;
+  font-size: 2.8em;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
+  text-decoration: none;
+}
+.heading-desc {
+  margin-bottom: 3.2em;
+  color: #3d3d42;
+  font-family: 'Arial', Sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.button-link {
+  padding: 15px 30px;
+  font-family: 'Arial', Sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 1.3px;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #f25319;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ffffff;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.29);
+  transition: all 0.3s;
+}
+
+@keyframes animation-bob {
+  0% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes animation-bob-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.button-link:hover {
+  color: #042471;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  text-decoration: none;
+  animation-name: animation-bob-float, animation-bob;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
+
+.button-link svg {
+  margin-left: 12px;
+}
+.button-link:hover svg {
+  fill: #042471;
+}
