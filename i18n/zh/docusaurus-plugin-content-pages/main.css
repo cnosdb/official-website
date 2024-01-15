@@ -200,7 +200,10 @@
     transform: translateY(-8px);
   }
 }
-
+.button-link {
+  display: inline-flex;
+  align-items: center;
+}
 .button-link:hover {
   color: #042471;
   background-color: #ffffff;
@@ -216,8 +219,148 @@
 }
 
 .button-link svg {
-  margin-left: 12px;
+  margin-left: 6px;
 }
 .button-link:hover svg {
   fill: #042471;
+}
+
+.container-bg {
+  position: relative;
+  background-color: #1c1b40;
+  padding: 4em 1em 4em 1em;
+}
+.widget-container-title {
+  margin: 0% 15% 0% 15%;
+  color: #ffffff;
+  font-family: 'Arial', Sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.divider-separator {
+  --divider-border-style: solid;
+  --divider-color: #f2531b;
+  --divider-border-width: 3px;
+  border-top: var(--divider-border-width) var(--divider-border-style)
+    var(--divider-color);
+  width: 80px;
+  margin: 20px auto;
+}
+
+.container-bg .widget-container {
+  margin: 1em;
+  text-align: center;
+  background-color: #343666;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.38);
+}
+.container-bg .widget-container img {
+  height: 106px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.container-bg .widget-container p {
+  text-align: center;
+  color: #e4e4f2;
+  font-family: 'Arial', Sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.heading-sub-title {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Ubuntu', Sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.container-bg .spacer-inner {
+  position: absolute;
+  left: -21px;
+  top: -90px;
+  z-index: 1;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  background-color: #f2531b;
+}
+
+.container-bg-e4e4f2 {
+  padding: 4em 1em;
+  background-color: #e4e4f2;
+}
+.container-bg-e4e4f2 .container-bg-e4e4f2-title {
+  margin-bottom: 20px;
+  color: #191b4a;
+  font-family: 'Arial', Sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+.container-bg-e4e4f2 p {
+  margin-bottom: 60px;
+  color: #343666;
+  font-family: 'Arial', Sans-serif;
+  line-height: 1.6em;
+}
+.container-bg-e4e4f2 .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #6f4bf1;
+  border-radius: 50px;
+}
+.container-bg-e4e4f2-left {
+  padding: 1em 6em 1em 1em;
+}
+.container-bg-e4e4f2 img {
+  width: 343px;
+  object-fit: cover;
+}
+
+.container-bg-03004F {
+  padding: 10em 1em 3em 1em;
+  background-color: #03004f;
+}
+.container-background-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(100%) contrast(100%) saturate(0%) blur(0px)
+    hue-rotate(0deg);
+  background-image: url(https://www.cnosdb.com/wp-content/uploads/2022/06/texture5.jpg);
+  opacity: 0.3;
+}
+.container-bg-03004F .widget-container {
+  background-color: #fff;
+}
+.container-bg-03004F .heading-sub-title {
+  color: #191b4a;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.container-bg-03004F .widget-container img {
+  transition-duration: 0.3s;
+}
+.container-bg-03004F .widget-container img:hover {
+  transform: scale(1.1);
+}
+.container-bg-03004F .widget-container p {
+  text-align: center;
+  color: #5a5a5a;
+  font-family: 'Arial', Sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.6em;
 }
