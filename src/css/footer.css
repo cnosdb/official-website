@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 500px;
   padding: 0;
   padding-top: 90px;
   color: #fff;
@@ -14,6 +13,7 @@
 .footer .container {
   width: 100%;
   height: 100%;
+  padding-bottom: 90px;
   display: flex;
 }
 .footer .container .footer-inner-box {
@@ -51,6 +51,14 @@
 }
 .footer-logo {
   margin-top: 60px;
+}
+
+.contact-us-zh {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 120px;
 }
 
 .footer__links {

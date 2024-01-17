@@ -1,8 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import ContactUs from '../ContactUs';
+import ContactUsZh from '../ContactUsZh';
 
 export default function FooterLayout({ style, links, logo, copyright }) {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <footer
       className={clsx('footer', {
@@ -11,7 +14,11 @@ export default function FooterLayout({ style, links, logo, copyright }) {
     >
       <div className="container container-fluid">
         <div className="footer-inner-box">
-          <ContactUs />
+          {siteConfig.baseUrl.indexOf('zh') > -1 ? (
+            <ContactUsZh />
+          ) : (
+            <ContactUs />
+          )}
           {links}
         </div>
       </div>
