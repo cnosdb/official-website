@@ -1,0 +1,346 @@
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-community {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  width: 100%;
+  background-color: #171c4a;
+}
+.community-inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2em 0;
+  box-sizing: border-box;
+}
+.container-community-header-title {
+  position: relative;
+  z-index: 2;
+  padding: 18px 12px 0 24px;
+  color: #ffffff;
+  font-family: 'Arial', Sans-serif;
+  font-size: 3.2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+.header-img {
+  object-fit: cover;
+}
+.container-community-header-title .spacer-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  background-color: #f2531b;
+}
+.icons-wrapper {
+  margin-top: 20px;
+}
+.header-icon:nth-of-type(3),
+.header-icon:nth-of-type(4) {
+  position: relative;
+}
+.header-icon:nth-of-type(3)::before {
+  position: absolute;
+  left: -120px;
+  z-index: 99;
+  content: '';
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-360px);
+  transition: all 0.5s;
+  width: 258px;
+  height: 300px;
+  background: url('https://cn.cnosdb.com/wp-content/uploads/2022/06/CnosDB%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.png')
+    no-repeat center center;
+  background-size: cover;
+}
+.header-icon:nth-of-type(3):hover::before {
+  visibility: visible;
+  transform: translateY(-300px);
+  opacity: 1;
+  cursor: pointer !important;
+}
+.header-icon:nth-of-type(4)::before {
+  position: absolute;
+  left: -120px;
+  z-index: 99;
+  content: '';
+  visibility: hidden;
+  width: 258px;
+  height: 300px;
+  transform: translateY(-360px);
+  transition: all 0.5s;
+  background: url('https://cn.cnosdb.com/wp-content/uploads/2022/06/CnosDB-%E8%A7%86%E9%A2%91%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpeg')
+    no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+}
+.header-icon:nth-of-type(4):hover::before {
+  visibility: visible;
+  transform: translateY(-300px);
+  opacity: 1;
+  cursor: pointer !important;
+}
+
+.header-icon svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 28px;
+  fill: #e75c1d;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.header-icon:hover svg {
+  transform: translateY(-8px);
+}
+
+.container-community-bg {
+  position: relative;
+  padding: 6em 0;
+}
+.container-community-background-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: url('https://www.cnosdb.com/wp-content/uploads/2022/04/pattern01.png');
+  opacity: 0.2;
+}
+
+.community-title {
+  color: #212529 !important;
+}
+
+.community-activity-inner {
+  position: relative;
+  margin: 15px;
+  padding: 50px 55px 46px 55px;
+  text-align: center;
+  background-color: #ffffff;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.community-activity-background-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 10px;
+}
+.community-heading-title-en {
+  position: relative;
+  z-index: 2;
+  color: #cdcdce;
+  font-family: 'Arial', Sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+
+.community-heading-title {
+  position: relative;
+  z-index: 2;
+  margin: 0.5em 0;
+  color: #ffffff;
+  font-family: 'Arial', Sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: none;
+  line-height: 1em;
+  letter-spacing: 1.5px;
+}
+.community-heading-desc {
+  position: relative;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.76);
+  font-family: 'Arial', Sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.7em;
+  letter-spacing: 0px;
+}
+a.community-search-btn {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'Barlow Condensed', Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.6em;
+  letter-spacing: 1.7px;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #f2531b2e;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #f2531b;
+  border-radius: 100px 100px 100px 100px;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+a.community-search-btn:hover {
+  transform: translateY(-8px);
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(210deg, #f2531b 0%, #14159f 100%);
+}
+
+.container-community-ambassador-bg {
+  position: relative;
+  padding: 6em 0;
+}
+.container-community-ambassador-background-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #212329;
+  background-image: url('https://www.cnosdb.com/wp-content/uploads/2022/08/shequ-background.png');
+}
+.community-ambassador {
+  min-height: 376px;
+  margin: 8px;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.17);
+}
+.community-ambassador-year {
+  color: #e75c1d;
+  font-family: 'Ubuntu', Sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: italic;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+.community-ambassador-title {
+  color: #ffffff;
+  font-family: 'Arial', Sans-serif;
+  font-size: 2.8em;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.community-ambassador-join-us {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: 'Arial', Sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 1.3px;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: #e75c1d;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #e75c1d;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.29);
+}
+.community-ambassador-join-us:hover {
+  color: #ffffff;
+  background-color: #6f4bf200;
+  border-color: #ffffff;
+  text-decoration: none;
+}
+
+.ambassador-head-portrait img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-style: groove;
+  border-width: 2px;
+  border-color: #e75c1d7d;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ambassador-name {
+  color: #212529;
+  font-family: 'Ubuntu', Sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+.community-ambassador p {
+  color: #242539;
+  font-family: 'Arial', Sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.7em;
+}
+.community-ambassador-function {
+  margin-left: 20px;
+}
+.highlights-playback-function {
+  margin-top: 30px;
+}
+.highlights-playback h2 {
+  color: #212529;
+  font-family: 'Arial', Sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  letter-spacing: 2px;
+}
+
+.highlights-playback a {
+  margin: 10px;
+  font-family: 'Arial', Sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 1.7px;
+  fill: #ffffff;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 0.6em 2em;
+  transition: all 0.3s;
+}
+.highlights-playback a:hover {
+  transform: translateY(-8px);
+}
+.highlights-playback a svg {
+  width: 1em;
+  height: auto;
+}
