@@ -1,0 +1,186 @@
+
+
+#homepage-app {
+	background-color: #F5F5F5;
+}
+
+.cnos-container {
+	width: 100%;
+}
+
+.cnos-container img {
+	vertical-align: middle;
+}
+
+.cnos-solution {
+	flex-direction: column;
+	height: 420px;
+	background-size: cover;
+}
+.solution-energy-power {
+	background: url("https://cnosdb.com/wp-content/uploads/2023/12/architecture-banner.png") no-repeat center bottom;
+}
+
+.solution-observability {
+	background: url("https://cnosdb.com/wp-content/uploads/2023/12/architecture-xinengyuan.png") no-repeat center bottom;
+}
+
+.contact-us {
+	margin-top: 30px;
+}
+
+.cnos-solution-title {
+	text-align: center;
+	font-size: 48px !important;
+	color: #fff !important;
+}
+
+.contact-us-btn {
+	display: inline-block;
+	width: 150px;
+	height: 46px;
+	line-height: 46px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 18px;
+	text-align: center;
+	font-family: PingFang SC;
+	color: #fff;
+	background: #f25319;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+	border-radius: 4px;
+}
+.contact-us-btn:hover {
+	color: #fff;
+  background: #b13305;
+}
+.contact-us-btn:focus {
+	color: #fff;
+}
+
+.inner-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1240px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 23px;
+}
+
+
+
+.inner-container-left {
+	width: 840px;
+	margin: 4em 0;
+	padding: 0 6.67em 5.34em;
+	background: #fff;
+}
+
+.inner-container img {
+	width: 100%;
+}
+
+.sub-title {
+	display: flex;
+	align-items: center;
+	margin-top: 45px;
+	line-height: 100px !important;
+	color: rgba(16, 16, 16, 1);
+	font-size: 30px;
+	text-align: left;
+	font-family: PingFangSC-medium;
+	border-bottom: 1px solid rgba(187, 187, 187, 1);
+}
+
+.sub-title svg {
+	margin-right: 12px;
+}
+
+.inner-container-left p {
+	margin: 24px 0;
+	color: rgba(55, 65, 81, 1);
+}
+
+.relation-box {
+	width: 350px;
+	margin-left: 50px;
+}
+
+.case-box {
+	width: 100%;
+	padding: 21px 27px;
+	line-height: 20px;
+	border-radius: 10px;
+	color: rgba(75, 79, 88, 1);
+
+	font-size: 15px;
+	font-family: Roboto;
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(187, 187, 187, 0.5);
+}
+
+.case-box-title {
+	margin-bottom: 12px;
+	font-size: 18px;
+	text-align: left;
+	color: rgba(16, 16, 16, 1);
+	font-family: PingFangSC-regular;
+}
+
+.case-details {
+	display: block;
+	margin-top: 18px;
+	font-size: 18px;
+	font-family: PingFangSC-regular;
+	color: #197ABC;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.inner-container {
+		justify-content: flex-start;
+		width: 100%;
+		padding: 0 60px;
+	}
+
+	.inner-container-left {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.relation-box {
+		margin-bottom: 30px;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.inner-container {
+		justify-content: flex-start;
+		width: 100%;
+		padding: 0 30px;
+	}
+
+	.inner-container-left {
+		width: 100%;
+		margin-bottom: 0;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.cnos-solution-title {
+		padding: 0 30px;
+	}
+
+	.relation-box {
+		margin-bottom: 30px;
+		margin-left: 0;
+	}
+}

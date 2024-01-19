@@ -69,7 +69,11 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: ['./src/css/custom.css', './src/css/footer.css'],
+          customCss: [
+            './src/css/animate.min.css',
+            './src/css/custom.css',
+            './src/css/footer.css',
+          ],
         },
       } satisfies Preset.Options,
     ],
@@ -114,6 +118,21 @@ const config: Config = {
           label: 'Community',
           to: '/community',
           position: 'right',
+        },
+        {
+          label: 'Solutions',
+          position: 'right',
+          className: 'solutions',
+          items: [
+            {
+              label: 'Energyutilities',
+              to: '/solutions/energyutilities',
+            },
+            {
+              label: 'Observabilitymonitoring',
+              to: '/solutions/observabilitymonitoring',
+            },
+          ],
         },
         {
           type: 'localeDropdown',

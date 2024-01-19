@@ -23,6 +23,10 @@
     "message": "社区",
     "description": "Navbar item with label Community"
   },
+  "item.label.Solutions": {
+    "message": "解决方案",
+    "description": "Navbar item with label Solutions"
+  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
@@ -30,5 +34,13 @@
   "item.label.Download": {
     "message": "下载试用",
     "description": "Navbar item with label Download"
+  },
+  "item.label.Energyutilities": {
+    "message": "能源电力",
+    "description": "Navbar item with label Energyutilities"
+  },
+  "item.label.Observabilitymonitoring": {
+    "message": "可观测性",
+    "description": "Navbar item with label Observabilitymonitoring"
   }
 }
