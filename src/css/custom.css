@@ -59,6 +59,10 @@ a:hover {
   text-decoration: none;
 }
 
+.flex1 {
+  flex: 1;
+}
+
 .mr60 {
   margin-right: 60px;
 }
@@ -66,7 +70,9 @@ a:hover {
 .mb26 {
   margin-bottom: 26px;
 }
-
+.mb30 {
+  margin-bottom: 30px;
+}
 
 .mr32 {
   margin-right: 32px;

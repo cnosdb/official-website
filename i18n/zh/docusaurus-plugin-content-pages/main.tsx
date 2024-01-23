@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
       <div className="main-zh-header">
         <div className="main-background-overlay"></div>
         <div className="inner-container main-flex">
-          <h2 className="header-title">
+          <h2 className="header-title animate__animated animate__fadeInDown">
             始于万物互联，开元横跨五洲<br /><span className="spacer-inner"></span><br />云原生时序数据库CnosDB已全面开源，欢迎使用
           </h2>
           <Slider {...settings}>
@@ -59,7 +59,7 @@ export default function Home(): JSX.Element {
         <Row className="align-items-center">
           <Col className="text-center widget-wrap">
             <img alt="" className="attachment-large" src="https://cn.cnosdb.com/wp-content/uploads/2022/06/215_SW50ZXJuZXQgb2YgdGhpbmdzIGxhbmRpbmcgcGFnZQ-转换.svg" />
-            <div className="widget-container">
+            <div className="widget-container  animate__animated animate__fadeInLeft">
               <div className="testimonial-content">"始于万物互联，开源横跨五洲"</div>
               <div className="testimonial-image">
                 <img decoding="async" width="150" height="150" src="https://cn.cnosdb.com/wp-content/uploads/2022/04/未标题-2-150x150.png" className="attachment-thumbnail" alt="" />

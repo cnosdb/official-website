@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.container {
+.community-container {
   width: 100%;
   height: 100%;
 }
@@ -32,8 +32,11 @@
   font-weight: 700;
   text-decoration: none;
 }
-.headerImg {
+.headerImgBox {
   width: 40%;
+}
+.headerImgBox img {
+  width: 100%;
   object-fit: cover;
 }
 .headerTitle .spacerInner {
