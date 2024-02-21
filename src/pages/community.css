@@ -12,11 +12,10 @@
   min-height: 472px;
   background-color: #171c4a;
 }
-.innerContainer {
+.community-inner-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 1140px;
   margin-right: auto;
   margin-left: auto;
   padding: 2em 0;

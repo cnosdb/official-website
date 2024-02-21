@@ -51,8 +51,7 @@
 }
 .widgetWrap {
   box-sizing: border-box;
-  width: calc(50% - 20px);
-  margin: 10px;
+  margin: 10px 0;
   padding: 2em;
   border: 1px solid #343666;
   border-radius: 8px;
@@ -127,9 +126,7 @@
 }
 
 .productCard {
-  width: 33%;
   padding: 10px;
-  padding-right: 50px;
 }
 .productImg {
   width: 16%;
@@ -172,4 +169,11 @@
 
 .mb18 {
   margin-bottom: 18px;
+}
+
+
+@media (max-width: 900px) {
+  .innerContainer {
+    padding: 0 30px;
+  }
 }

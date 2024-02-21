@@ -1,5 +1,9 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import './main.css'
 
 export default function MainPage() {
 
@@ -151,8 +155,8 @@ response <span class="token operator">=</span> requests<span class="token punctu
     <main>
       <div id="homepage-app">
         <div className="cnos-container cnos-introduce">
-          <div className="inner-container">
-            <div className="flex justify-content-between align-items-center">
+          <Container>
+            <div className="flex cons-main-inner-container align-items-center">
               <div className="cloud-warpper">
                 <h2>
                   <img
@@ -342,7 +346,7 @@ response <span class="token operator">=</span> requests<span class="token punctu
               <span>High Compression Rate, </span>
               <span>High Ease-Of-Use</span>
             </h3>
-            <div className="flex justify-content-between cloud-high">
+            <div className="flex cons-main-inner-container cloud-high">
               <div className="cloud-high-performance">
                 <div className="cloud-high-title">
                   <img
@@ -383,11 +387,11 @@ response <span class="token operator">=</span> requests<span class="token punctu
                 </p>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
         <div className="cnos-container cnos-start">
-          <div className="inner-container">
-            <h3 className="cloud-subtitle">
+          <Container>
+            <h3 className="cloud-subtitle mt0">
               <span>Get started with</span>
               <span>CnosDB in minutes</span>
             </h3>
@@ -409,11 +413,11 @@ response <span class="token operator">=</span> requests<span class="token punctu
               </a>
               .
             </p>
-          </div>
+          </Container>
         </div>
 
         <div className="cnos-container develop-bg-bottom">
-          <div className="inner-container enginner flex justify-content-between align-items-center">
+          <Container className="inner-container enginner flex cons-main-inner-container align-items-center">
             <div className="enginner-box-left">
               <h3 className="cloud-subtitle">
                 <span>Engineers' favorite</span>
@@ -501,12 +505,12 @@ response <span class="token operator">=</span> requests<span class="token punctu
                 </pre>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
 
         <div className="cnos-container cnos-joinus">
-          <div className="inner-container">
-            <div className="flex justify-content-between align-items-center">
+          <Container>
+            <div className="cons-main-inner-container flex  align-items-center">
               <div className="img-joinus-box">
                 <img
                   className="img-joinus"
@@ -817,7 +821,7 @@ response <span class="token operator">=</span> requests<span class="token punctu
                 </div>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
       </div>
     </main >

@@ -331,7 +331,7 @@ export default function Home(): JSX.Element {
                     <Fragment>
                       {
                         platform === 'linux' && (
-                          <Col xs={4} className='mb30'>
+                          <Col xs={4} sm={8} className='mb30'>
                             <label htmlFor="Arch" className='flex align-items-center'>
                               <span>Arch:&nbsp;&nbsp;</span>
                               <Select id="Arch" className='flex1' options={archOptions} value={[selectedArch]} onChange={changeArch} />
@@ -339,7 +339,7 @@ export default function Home(): JSX.Element {
                           </Col>
                         )
                       }
-                      <Col xs={4} className='mb30'>
+                      <Col xs={4} sm={8} className='mb30'>
                         <label htmlFor="Version" className='flex align-items-center'>
                           <span>Version:&nbsp;&nbsp;</span>
                           <Select id="Version" className='flex1' options={versions} value={selectedVersion} onChange={changeVersion} />

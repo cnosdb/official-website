@@ -1,5 +1,8 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './community.css'
 
 export default function Home(): JSX.Element {
@@ -10,7 +13,7 @@ export default function Home(): JSX.Element {
       description="Welcome to the CnosDB community! In the CnosDB open source community, you can connect with other users and contributors. Explore ways to get involved, stay up-to-date on the latest CnosDB product, open source, and IoT-related news, and stay in sync with the global community. Share your experiences using CnosDB, including the challenges you've faced, the lessons you've learned, and the issues you've encountered. The community is a forum for open discussion and learning.">
       <main className="community-container">
         <div className="header">
-          <div className="innerContainer">
+          <Container className="community-inner-container">
             <h1 className="headerTitle">
               <div className="animate__animated animate__fadeInDown">Ciao, Welcome to the<br />CnosDB Community! <span className="spacerInner"></span></div>
               <div className="iconsWrapper animate__animated animate__fadeInUp">
@@ -49,9 +52,9 @@ export default function Home(): JSX.Element {
             <div className="headerImgBox animate__animated animate__fadeInRight">
               <img src="https://cnosdb.com/wp-content/uploads/2022/06/undraw_google_docs_re_evm3_复制.svg" alt="" />
             </div>
-          </div>
+          </Container>
         </div>
-        <div className="innerContainer">
+        <div className="community-inner-container">
           <div className="elfsight-app-f1689d7c-0a6d-49bc-be73-10326c977967" data-elfsight-app-lazy></div>
         </div>
       </main>
