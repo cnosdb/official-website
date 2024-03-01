@@ -232,7 +232,6 @@ export default function Home(): JSX.Element {
       title={`Download`}
       description="CnosDB | A high-performance, highly-compressed, highly available distributed cloud-native time-series database - At the time-series database level, it supports: strong scalability; compute/storage separation; balanced storage performance and cost; vectorized query support; support for multiple time-series protocols; and external full ecosystem support. At the cloud-native level, it supports: high availability; multi-tenancy with pay-as-you-go pricing; Change Data Capture (CDC); configurable requirements; cloud-edge coordination; and cloud-native ecosystem integration.">
       <main>
-        <main>
           <div className="header">
             <div className="download-inner-container">
               <h1 className="headerTitle">Download</h1>
@@ -331,7 +330,7 @@ export default function Home(): JSX.Element {
                     <Fragment>
                       {
                         platform === 'linux' && (
-                          <Col xs={4} sm={8} className='mb30'>
+                          <Col lg={3} sm={8} className='mb30'>
                             <label htmlFor="Arch" className='flex align-items-center'>
                               <span>Arch:&nbsp;&nbsp;</span>
                               <Select id="Arch" className='flex1' options={archOptions} value={[selectedArch]} onChange={changeArch} />
@@ -339,7 +338,7 @@ export default function Home(): JSX.Element {
                           </Col>
                         )
                       }
-                      <Col xs={4} sm={8} className='mb30'>
+                      <Col lg={3} sm={8} className='mb30'>
                         <label htmlFor="Version" className='flex align-items-center'>
                           <span>Version:&nbsp;&nbsp;</span>
                           <Select id="Version" className='flex1' options={versions} value={selectedVersion} onChange={changeVersion} />
@@ -400,7 +399,6 @@ export default function Home(): JSX.Element {
 
           </Container>
         </main >
-      </main >
     </Layout >
   );
 }
