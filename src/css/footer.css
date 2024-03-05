@@ -248,6 +248,9 @@
   .col {
     flex: none;
   }
+  .contact-us-zh {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 544px) {

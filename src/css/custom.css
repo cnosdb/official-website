@@ -149,3 +149,6 @@ a {
   color: #fff;
   background: #b13305;
 }
+.widget-container-row {
+  width: 100%;
+}

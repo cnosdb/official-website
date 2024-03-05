@@ -82,7 +82,7 @@ export default function Home(): JSX.Element {
         <Container>
           <h2 className="widget-container-title">我们拥有大批优秀的专业人才，强悍的科研实力，丰富的数据库产品经验</h2>
           <div className="divider-separator"></div>
-          <Row>
+          <Row className="widget-container-row">
             <Col className="widget-container">
               <div>
                 <img decoding="async" alt="" src="https://cn.cnosdb.com/wp-content/uploads/2022/06/时序数据库：原理与实践-839x1024.jpg" />
@@ -110,7 +110,7 @@ export default function Home(): JSX.Element {
       </div>
       <div className="container-bg-e4e4f2">
         <Container>
-          <Row>
+          <Row className="widget-container-row">
             <Col lg={8} className="container-bg-e4e4f2-left">
               <h2 className="container-bg-e4e4f2-title">成为CnosDB的贡献者</h2>
               <p>在这里，无论是翻译、文档撰写、设计等非代码贡献，还是测试、写代码等代码贡献，都将视为宝贵的参与。在这里，你还会收获一个和谐、热心的开源社区，了解最前沿的技术领域。没有人会在意你是一位资深开发人员还是一名在校学生，真正重要的是你所做贡献的质量。还等什么？ 快来一起参与开源，传承开源精神吧。</p>
@@ -132,7 +132,7 @@ export default function Home(): JSX.Element {
         <Container>
           <h2 className="widget-container-title">高性能、高压缩率、高易用性</h2>
           <div className="divider-separator"></div>
-          <Row>
+          <Row className="widget-container-row">
             <Col className="widget-container">
               <div>
                 <img decoding="async" alt="" src="https://cn.cnosdb.com/wp-content/uploads/2022/06/Search-results-for-Compression-Flaticon.png" />
